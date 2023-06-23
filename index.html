@@ -1,140 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/loginIndex.css">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/totem.css">
     <title>Stark Park</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <button >Cliente</button>
-              <button >ADM</button>
-            </div>
-          </nav>
-    </header>
     <main class="flex-grow-1 flex-shrink-1 w-100">
-        <section class="container-fluid col m-0 p-5 ">
+        <section class="container-fluid col m-0 p-0 ">
             <section class="container-fluid row m-0 p-0">
-                <div>
-                    <div #="vagasTotais">100</div>
-                    <div #="vagasOcupadas">0</div>
-                    <div #="vagasLivres">100</div>
+                <div class="painelVagas container-fluid d-flex col">
+                    <div class="painel" ><p id="vagasTotais">Vagas Totais: 100</p></div>
+                    <div class="painel" ><p id="vagasOcupadas"></p></div>
+                    <div class="painel" ><p id="vagasLivres"></p></div>
                 </div>
-                <div class="vagasGerais">
-                    <div id="A01" class="vaga">A01</div>
-                    <div id="A02" class="vaga">A02</div>
-                    <div id="A03" class="vaga">A03</div>
-                    <div id="A04" class="vaga">A04</div>
-                    <div id="A05" class="vaga">A05</div>
-                    <div id="A06" class="vaga">A06</div>
-                    <div id="A07" class="vaga">A07</div>
-                    <div id="A08" class="vaga">A08</div>
-                    <div id="A09" class="vaga">A09</div>
-                    <div id="A010" class="vaga">A010</div>
-                    <div id="B011" class="vaga">B011</div>
-                    <div id="B012" class="vaga">B012</div>
-                    <div id="B013" class="vaga">B013</div>
-                    <div id="B014" class="vaga">B014</div>
-                    <div id="B015" class="vaga">B015</div>
-                    <div id="B016" class="vaga">B016</div>
-                    <div id="B017" class="vaga">B017</div>
-                    <div id="B018" class="vaga">B018</div>
-                    <div id="B019" class="vaga">B019</div>
-                    <div id="B020" class="vaga">B020</div>
-                    <div id="C021" class="vaga">C021</div>
-                    <div id="C022" class="vaga">C022</div>
-                    <div id="C023" class="vaga">C023</div>
-                    <div id="C024" class="vaga">C024</div>
-                    <div id="C025" class="vaga">C025</div>
-                    <div id="C026" class="vaga">C026</div>
-                    <div id="C027" class="vaga">C027</div>
-                    <div id="C028" class="vaga">C028</div>
-                    <div id="C029" class="vaga">C029</div>
-                    <div id="C030" class="vaga">C030</div>
-                    <div id="D031" class="vaga">D031</div>
-                    <div id="D032" class="vaga">D032</div>
-                    <div id="D033" class="vaga">D033</div>
-                    <div id="D034" class="vaga">D034</div>
-                    <div id="D035" class="vaga">D035</div>
-                    <div id="D036" class="vaga">D036</div>
-                    <div id="D037" class="vaga">D037</div>
-                    <div id="D038" class="vaga">D038</div>
-                    <div id="D039" class="vaga">D039</div>
-                    <div id="D040" class="vaga">D040</div>
-                    <div id="E041" class="vaga">E041</div>
-                    <div id="E042" class="vaga">E042</div>
-                    <div id="E043" class="vaga">E043</div>
-                    <div id="E044" class="vaga">E044</div>
-                    <div id="E045" class="vaga">E045</div>
-                    <div id="E046" class="vaga">E046</div>
-                    <div id="E047" class="vaga">E047</div>
-                    <div id="E048" class="vaga">E048</div>
-                    <div id="E049" class="vaga">E049</div>
-                    <div id="E050" class="vaga">E050</div>
-                    <div id="F051" class="vaga">F051</div>
-                    <div id="F052" class="vaga">F052</div>
-                    <div id="F053" class="vaga">F053</div>
-                    <div id="F054" class="vaga">F054</div>
-                    <div id="F055" class="vaga">F055</div>
-                    <div id="F056" class="vaga">F056</div>
-                    <div id="F057" class="vaga">F057</div>
-                    <div id="F058" class="vaga">F058</div>
-                    <div id="F059" class="vaga">F059</div>
-                    <div id="F060" class="vaga">F060</div>
-                    <div id="G061" class="vaga">G061</div>
-                    <div id="G062" class="vaga">G062</div>
-                    <div id="G063" class="vaga">G063</div>
-                    <div id="G064" class="vaga">G064</div>
-                    <div id="G065" class="vaga">G065</div>
-                    <div id="G066" class="vaga">G066</div>
-                    <div id="G067" class="vaga">G067</div>
-                    <div id="G068" class="vaga">G068</div>
-                    <div id="G069" class="vaga">G069</div>
-                    <div id="G070" class="vaga">G070</div>
-                    <div id="H071" class="vaga">H071</div>
-                    <div id="H072" class="vaga">H072</div>
-                    <div id="H073" class="vaga">H073</div>
-                    <div id="H074" class="vaga">H074</div>
-                    <div id="H075" class="vaga">H075</div>
-                    <div id="H076" class="vaga">H076</div>
-                    <div id="H077" class="vaga">H077</div>
-                    <div id="H078" class="vaga">H078</div>
-                    <div id="H079" class="vaga">H079</div>
-                    <div id="H080" class="vaga">H080</div>
-                    <div id="I081" class="vaga">I081</div>
-                    <div id="I082" class="vaga">I082</div>
-                    <div id="I083" class="vaga">I083</div>
-                    <div id="I084" class="vaga">I084</div>
-                    <div id="I085" class="vaga">I085</div>
-                    <div id="I086" class="vaga">I086</div>
-                    <div id="I087" class="vaga">I087</div>
-                    <div id="I088" class="vaga">I088</div>
-                    <div id="I089" class="vaga">I089</div>
-                    <div id="I090" class="vaga">I090</div>
-                    <div id="J091" class="vaga">J091</div>
-                    <div id="J092" class="vaga">J092</div>
-                    <div id="J093" class="vaga">J093</div>
-                    <div id="J094" class="vaga">J094</div>
-                    <div id="J095" class="vaga">J095</div>
-                    <div id="J096" class="vaga">J096</div>
-                    <div id="J097" class="vaga">J097</div>
-                    <div id="J098" class="vaga">J098</div>
-                    <div id="J099" class="vaga">J099</div>
-                    <div id="J0100" class="vaga">J0100</div>
+                <div class="principal">
+                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalVagas" onclick="selectCar()"><img src="COMPONENTES/1299198.svg"
+                            alt="Carro">
+                        <p>Carro</p>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modal-full" id="modalVagas" data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalVagasLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modalVagasLabel">Vagas Livres e Ocupas</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="resetTipoVeiculo()"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-wrap gap-3">
+                                    <div id="A01" class="vaga" onclick="reserveVaga(1)">A01</div>
+                                    <div id="A02" class="vaga" onclick="reserveVaga(2)">A02</div>
+                                    <div id="A03" class="vaga" onclick="reserveVaga(3)">A03</div>
+                                    <div id="A04" class="vaga" onclick="reserveVaga(4)">A04</div>
+                                    <div id="A05" class="vaga" onclick="reserveVaga(5)">A05</div>
+                                    <div id="A06" class="vaga" onclick="reserveVaga(6)">A06</div>
+                                    <div id="A07" class="vaga" onclick="reserveVaga(7)">A07</div>
+                                    <div id="A08" class="vaga" onclick="reserveVaga(8)">A08</div>
+                                    <div id="A09" class="vaga" onclick="reserveVaga(9)">A09</div>
+                                    <div id="A010" class="vaga" onclick="reserveVaga(10)">A010</div>
+                                    <div id="B011" class="vaga" onclick="reserveVaga(11)">B011</div>
+                                    <div id="B012" class="vaga" onclick="reserveVaga(12)">B012</div>
+                                    <div id="B013" class="vaga" onclick="reserveVaga(13)">B013</div>
+                                    <div id="B014" class="vaga" onclick="reserveVaga(14)">B014</div>
+                                    <div id="B015" class="vaga" onclick="reserveVaga(15)">B015</div>
+                                    <div id="B016" class="vaga" onclick="reserveVaga(16)">B016</div>
+                                    <div id="B017" class="vaga" onclick="reserveVaga(17)">B017</div>
+                                    <div id="B018" class="vaga" onclick="reserveVaga(18)">B018</div>
+                                    <div id="B019" class="vaga" onclick="reserveVaga(19)">B019</div>
+                                    <div id="B020" class="vaga" onclick="reserveVaga(20)">B020</div>
+                                    <div id="C021" class="vaga" onclick="reserveVaga(21)">C021</div>
+                                    <div id="C022" class="vaga" onclick="reserveVaga(22)">C022</div>
+                                    <div id="C023" class="vaga" onclick="reserveVaga(23)">C023</div>
+                                    <div id="C024" class="vaga" onclick="reserveVaga(24)">C024</div>
+                                    <div id="C025" class="vaga" onclick="reserveVaga(25)">C025</div>
+                                    <div id="C026" class="vaga" onclick="reserveVaga(26)">C026</div>
+                                    <div id="C027" class="vaga" onclick="reserveVaga(27)">C027</div>
+                                    <div id="C028" class="vaga" onclick="reserveVaga(28)">C028</div>
+                                    <div id="C029" class="vaga" onclick="reserveVaga(29)">C029</div>
+                                    <div id="C030" class="vaga" onclick="reserveVaga(30)">C030</div>
+                                    <div id="D031" class="vaga" onclick="reserveVaga(31)">D031</div>
+                                    <div id="D032" class="vaga" onclick="reserveVaga(32)">D032</div>
+                                    <div id="D033" class="vaga" onclick="reserveVaga(33)">D033</div>
+                                    <div id="D034" class="vaga" onclick="reserveVaga(34)">D034</div>
+                                    <div id="D035" class="vaga" onclick="reserveVaga(35)">D035</div>
+                                    <div id="D036" class="vaga" onclick="reserveVaga(36)">D036</div>
+                                    <div id="D037" class="vaga" onclick="reserveVaga(37)">D037</div>
+                                    <div id="D038" class="vaga" onclick="reserveVaga(38)">D038</div>
+                                    <div id="D039" class="vaga" onclick="reserveVaga(39)">D039</div>
+                                    <div id="D040" class="vaga" onclick="reserveVaga(40)">D040</div>
+                                    <div id="E041" class="vaga" onclick="reserveVaga(41)">E041</div>
+                                    <div id="E042" class="vaga" onclick="reserveVaga(42)">E042</div>
+                                    <div id="E043" class="vaga" onclick="reserveVaga(43)">E043</div>
+                                    <div id="E044" class="vaga" onclick="reserveVaga(44)">E044</div>
+                                    <div id="E045" class="vaga" onclick="reserveVaga(45)">E045</div>
+                                    <div id="E046" class="vaga" onclick="reserveVaga(46)">E046</div>
+                                    <div id="E047" class="vaga" onclick="reserveVaga(47)">E047</div>
+                                    <div id="E048" class="vaga" onclick="reserveVaga(48)">E048</div>
+                                    <div id="E049" class="vaga" onclick="reserveVaga(49)">E049</div>
+                                    <div id="E050" class="vaga" onclick="reserveVaga(50)">E050</div>
+                                    <div id="F051" class="vaga" onclick="reserveVaga(51)">F051</div>
+                                    <div id="F052" class="vaga" onclick="reserveVaga(52)">F052</div>
+                                    <div id="F053" class="vaga" onclick="reserveVaga(53)">F053</div>
+                                    <div id="F054" class="vaga" onclick="reserveVaga(54)">F054</div>
+                                    <div id="F055" class="vaga" onclick="reserveVaga(55)">F055</div>
+                                    <div id="F056" class="vaga" onclick="reserveVaga(56)">F056</div>
+                                    <div id="F057" class="vaga" onclick="reserveVaga(57)">F057</div>
+                                    <div id="F058" class="vaga" onclick="reserveVaga(58)">F058</div>
+                                    <div id="F059" class="vaga" onclick="reserveVaga(59)">F059</div>
+                                    <div id="F060" class="vaga" onclick="reserveVaga(60)">F060</div>
+                                    <div id="G061" class="vaga" onclick="reserveVaga(61)">G061</div>
+                                    <div id="G062" class="vaga" onclick="reserveVaga(62)">G062</div>
+                                    <div id="G063" class="vaga" onclick="reserveVaga(63)">G063</div>
+                                    <div id="G064" class="vaga" onclick="reserveVaga(64)">G064</div>
+                                    <div id="G065" class="vaga" onclick="reserveVaga(65)">G065</div>
+                                    <div id="G066" class="vaga" onclick="reserveVaga(66)">G066</div>
+                                    <div id="G067" class="vaga" onclick="reserveVaga(67)">G067</div>
+                                    <div id="G068" class="vaga" onclick="reserveVaga(68)">G068</div>
+                                    <div id="G069" class="vaga" onclick="reserveVaga(69)">G069</div>
+                                    <div id="G070" class="vaga" onclick="reserveVaga(70)">G070</div>
+                                    <div id="H071" class="vaga" onclick="reserveVaga(71)">H071</div>
+                                    <div id="H072" class="vaga" onclick="reserveVaga(72)">H072</div>
+                                    <div id="H073" class="vaga" onclick="reserveVaga(73)">H073</div>
+                                    <div id="H074" class="vaga" onclick="reserveVaga(74)">H074</div>
+                                    <div id="H075" class="vaga" onclick="reserveVaga(75)">H075</div>
+                                    <div id="H076" class="vaga" onclick="reserveVaga(76)">H076</div>
+                                    <div id="H077" class="vaga" onclick="reserveVaga(77)">H077</div>
+                                    <div id="H078" class="vaga" onclick="reserveVaga(78)">H078</div>
+                                    <div id="H079" class="vaga" onclick="reserveVaga(79)">H079</div>
+                                   
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                        onclick="resetTipoVeiculo()">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalVagasMoto" onclick="selectMoto()"><img src="COMPONENTES/39131.svg" alt="Moto">
+                        <p>Moto</p>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade modal-full" id="modalVagasMoto" data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalVagasMoto" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modalVagasMotoLabel">MOTO</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="resetTipoVeiculo()"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-wrap gap-3">
+                                    <div id="H080" class="vaga" onclick="reserveVaga(80)">H080</div>
+                                    <div id="I081" class="vaga" onclick="reserveVaga(81)">I081</div>
+                                    <div id="I082" class="vaga" onclick="reserveVaga(82)">I082</div>
+                                    <div id="I083" class="vaga" onclick="reserveVaga(83)">I083</div>
+                                    <div id="I084" class="vaga" onclick="reserveVaga(84)">I084</div>
+                                    <div id="I085" class="vaga" onclick="reserveVaga(85)">I085</div>
+                                    <div id="I086" class="vaga" onclick="reserveVaga(86)">I086</div>
+                                    <div id="I087" class="vaga" onclick="reserveVaga(87)">I087</div>
+                                    <div id="I088" class="vaga" onclick="reserveVaga(88)">I088</div>
+                                    <div id="I089" class="vaga" onclick="reserveVaga(89)">I089</div>
+                                    <div id="I090" class="vaga" onclick="reserveVaga(90)">I090</div>
+                                    <div id="J091" class="vaga" onclick="reserveVaga(91)">J091</div>
+                                    <div id="J092" class="vaga" onclick="reserveVaga(92)">J092</div>
+                                    <div id="J093" class="vaga" onclick="reserveVaga(93)">J093</div>
+                                    <div id="J094" class="vaga" onclick="reserveVaga(94)">J094</div>
+                                    <div id="J095" class="vaga" onclick="reserveVaga(95)">J095</div>
+                                    <div id="J096" class="vaga" onclick="reserveVaga(96)">J096</div>
+                                    <div id="J097" class="vaga" onclick="reserveVaga(97)">J097</div>
+                                    <div id="J098" class="vaga" onclick="reserveVaga(98)">J098</div>
+                                    <div id="J099" class="vaga" onclick="reserveVaga(99)">J099</div>
+                                    <div id="J0100" class="vaga" onclick="reserveVaga(100)">J0100</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                        onclick="resetTipoVeiculo()">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalUber">
+                        <img src="COMPONENTES/Uber.svg" alt="Uber">
+                        <p>Veículos de Aplicativos</p>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalUber" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="modalUberLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modalUberLabel">Motorista de Aplicativo</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        onclick="resetTipoVeiculo()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Você terá 5 minutos para sair ou pagará uma taxa adicional!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                        onclick="resetTipoVeiculo()">Voltar</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        onclick="">Continuar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button>Veiculos de aplicativos</button>                  
             </section>
-        </section>    
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-    <script src="JAVASCRIPT/loginValidation.js"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="JAVASCRIPT/totem.js"></script>
 </body>
+
 </html>
