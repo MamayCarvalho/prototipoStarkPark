@@ -1,17 +1,19 @@
 let vagasStatus = {};
 let tipoVeiculo = null;
-let tipoVeiculoValor = null;
-
+let ocupacaoVaga = null;
+let vaga = null;
 function selectCar() {
-  resetTipoVeiculo()
+  resetTipoVeiculo();
   tipoVeiculo = 'carro';
-  tipoVeiculoValor = 2;
+  ocupacaoVaga = 2;
+  dataHora =  obterDataHoraAtual();
 }
 
 function selectMoto() {
-  resetTipoVeiculo()
+  resetTipoVeiculo();
   tipoVeiculo = 'moto';
-  tipoVeiculoValor = 1;
+  ocupacaoVaga = 1;
+  dataHora =  obterDataHoraAtual();
 }
 
 function reserveVaga(numero) {
@@ -20,7 +22,9 @@ function reserveVaga(numero) {
     if (tipoVeiculo === 'moto' && vagaStatus.tipoVeiculo === 'moto') {
       if (vagaStatus.segundaSelecao) {
         let confirmacao = confirm("Deseja reservar a vaga? Já há uma moto nesta vaga!");
-        confirmacao ? (vagaStatus.valorVeiculo = 2) : null;
+        if (confirmacao) {
+          vagaStatus.ocupacaoVaga = 2;
+        }
       } else {
         vagaStatus.segundaSelecao = true;
       }
@@ -29,11 +33,43 @@ function reserveVaga(numero) {
     }
   } else {
     let confirmacao = confirm("Deseja reservar a vaga?");
-    confirmacao
-      ? (vagasStatus[numero] = { tipoVeiculo: tipoVeiculo, valorVeiculo: tipoVeiculoValor })
-      : null;
+    if (confirmacao) {
+      let codigo = gerarCodigo();
+      vagasStatus[numero] = {
+        tipoVeiculo: tipoVeiculo,
+        ocupacaoVaga: ocupacaoVaga,
+        codigo: codigo,
+        dataHora: dataHora
+      };
+    }
   }
   atualizarVagas();
+}
+
+function gerarCodigo() {
+  let caracteres = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '@', '#', '$'];
+  let codigo = [];
+  let caracteresLength = caracteres.length;
+
+  for (let i = 0; i < 9; i++) {
+    let indice = Math.floor(Math.random() * caracteresLength);
+    codigo.push(caracteres[indice]);
+  }
+
+  return codigo.join('');
+}
+
+function obterDataHoraAtual() {
+  let dataHoraAtual = new Date();
+  let dia = ("0" + dataHoraAtual.getDate()).slice(-2);
+  let mes = ("0" + (dataHoraAtual.getMonth() + 1)).slice(-2);
+  let ano = dataHoraAtual.getFullYear();
+  let horas = ("0" + dataHoraAtual.getHours()).slice(-2);
+  let minutos = ("0" + dataHoraAtual.getMinutes()).slice(-2);
+  let segundos = ("0" + dataHoraAtual.getSeconds()).slice(-2);
+  let dataHoraFormatada = dia + "/" + mes + "/" + ano + " " + horas + ":" + minutos + ":" + segundos;
+
+  return dataHoraFormatada;
 }
 
 function atualizarVagas() {
@@ -45,7 +81,7 @@ function atualizarVagas() {
 
     if (vagaStatus) {
       if (vagaStatus.tipoVeiculo === 'moto') {
-        vaga.style.backgroundColor = vagaStatus.valorVeiculo === 1 ? 'orange' : 'red';
+        vaga.style.backgroundColor = vagaStatus.ocupacaoVaga === 1 ? 'orange' : 'red';
       } else if (vagaStatus.tipoVeiculo === 'carro') {
         vaga.style.backgroundColor = 'red';
       }
@@ -55,16 +91,16 @@ function atualizarVagas() {
   }
 
   let vagasOcupadas = Object.keys(vagasStatus).length;
-  let vagasLivres = Object.keys(vagasStatus).length - vagasOcupadas;
+  let vagasLivres = 100 - vagasOcupadas;
 
   document.getElementById("vagasOcupadas").textContent = `Vagas Ocupadas: ${vagasOcupadas}`;
-  document.getElementById("vagasLivres").textContent = `Vagas Livres: ${vagasLivres = 100 - vagasOcupadas}`;
+  document.getElementById("vagasLivres").textContent = `Vagas Livres: ${vagasLivres}`;
 }
-
-atualizarVagas();
 
 function resetTipoVeiculo() {
   tipoVeiculo = null;
-  tipoVeiculoValor = null;
+  ocupacaoVaga = null;
+  dataHora = null;
 }
 
+atualizarVagas();
