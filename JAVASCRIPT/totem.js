@@ -38,6 +38,7 @@ function reserveVaga(numero) {
       vagasStatus[numero] = {
         tipoVeiculo: tipoVeiculo,
         ocupacaoVaga: ocupacaoVaga,
+        vaga:`${numero}`,
         codigo: codigo,
         dataHora: dataHora
       };
