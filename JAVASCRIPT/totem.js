@@ -75,6 +75,7 @@ function obterDataHoraAtual() {
 
 function atualizarVagas() {
   let vagas = document.getElementsByClassName("vaga");
+  
   for (let i = 0; i < vagas.length; i++) {
     let vaga = vagas[i];
     let numeroVaga = i + 1;
@@ -105,3 +106,4 @@ function resetTipoVeiculo() {
 }
 
 atualizarVagas();
+
