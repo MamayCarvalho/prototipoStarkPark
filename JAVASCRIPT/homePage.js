@@ -1,0 +1,1 @@
+import { vagasStatus } from "./totem";

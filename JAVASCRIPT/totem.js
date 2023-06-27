@@ -94,7 +94,7 @@ function atualizarVagas() {
   }
 
   let vagasOcupadas = Object.keys(vagasStatus).length;
-  let vagasLivres = 100 - vagasOcupadas;
+  let vagasLivres = vagas.length - vagasOcupadas;
 
   document.getElementById("vagasOcupadas").textContent = `Vagas Ocupadas: ${vagasOcupadas}`;
   document.getElementById("vagasLivres").textContent = `Vagas Livres: ${vagasLivres}`;
@@ -107,3 +107,4 @@ function resetTipoVeiculo() {
 }
 
 atualizarVagas();
+
