@@ -1,18 +1,18 @@
-(function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      // Validação de formulário Bootstrap
-      var forms = document.getElementsByClassName('needs-validation');
-      var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener('submit', function (event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+function validateForm(event) {
+  event.preventDefault(); // Evita o envio do formulário
 
-const serial = "S51DF-FI4D8-FDFS5-HUYG1-S45DF"
+  // Obter os valores digitados pelo usuário
+  var login = document.getElementById('login').value;
+  var senha = document.getElementById('senha').value;
+
+  // Verificar se o login e a senha correspondem aos valores desejados
+  var loginCorreto = 'admin123';
+  var senhaCorreta = 'admin123';
+
+  if (login === loginCorreto && senha === senhaCorreta) {
+    // Redirecionar para a página inicial (homepage)
+    window.location.href = 'homePage.html';
+  } else {
+    alert('Login ou senha incorretos!');
+  }
+}
