@@ -1,7 +1,7 @@
 let vagasStatus = {};
-let tipoVeiculo = '';
-let ocupacaoVaga = '';
-
+let tipoVeiculo = null;
+let ocupacaoVaga = null;
+let vaga = null;
 
 function selectCar() {
   resetTipoVeiculo();
@@ -107,4 +107,3 @@ function resetTipoVeiculo() {
 }
 
 atualizarVagas();
-export { vagasStatus };
