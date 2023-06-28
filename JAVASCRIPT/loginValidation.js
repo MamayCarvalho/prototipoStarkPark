@@ -6,7 +6,7 @@ function validateForm(event) {
   var senha = document.getElementById('senha').value;
 
   // Verificar se o login e a senha correspondem aos valores desejados
-  var loginCorreto = 'admin123';
+  var loginCorreto = 'admin';
   var senhaCorreta = 'admin123';
 
   if (login === loginCorreto && senha === senhaCorreta) {
