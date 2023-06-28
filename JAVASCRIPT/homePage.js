@@ -4,7 +4,7 @@ let data = {
     labels: ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'],
     datasets: [{
         label: 'Quantidade de Veículos',
-        data: [20, 35, 42, 30, 55, 38, 25],
+        data: [100, 45, 69, 40, 58, 80, 100],
         backgroundColor: 'rgba(255, 255, 255, 0.5)', // Cor das barras (branco com transparência)
         borderColor: 'rgba(255, 255, 255, 1)', // Cor das bordas das barras (branco)
         borderWidth: 1, // Espessura das bordas das barras

@@ -76,11 +76,7 @@
     z-index: 1500;
 }
 
-.form-table{
-    padding: 5px;
-    border-radius: 15px !important;
-}
-.painel{
-    padding: 5px;
-    border-radius: 15px !important;
+.chart-container {
+    max-width: 800px!important;
+    margin: 0 auto;
 }
