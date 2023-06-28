@@ -18,7 +18,7 @@
 </head>
 
 <body class="d-flex m-0 p-0" data-bs-theme="dark">
-    <header class="row-cols-2 m-0 position-fixed">
+    <header  class="">
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="home" viewBox="0 0 16 16">
                 <path
@@ -50,7 +50,7 @@
                 </path>
             </symbol>
         </svg>
-        <div class="navBar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px; height: 100vh;">
+        <div class="navBar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 220px; height: 100%;">
             <a href="/"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img lass="bi pe-none me-2" src="/COMPONENTES/logo/logo-stark-branco-v1.2.png" alt=""
@@ -60,7 +60,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
+                    <a href="#" class="nav-link  link-body-emphasis active" aria-current="page">
                         <svg class="bi pe-none me-2" width="16" height="16">
                             <use xlink:href="#home"></use>
                         </svg>
@@ -92,8 +92,8 @@
                     </a>
                 </li>
             </ul>
-            <hr>
-            <div class="dropdown">
+           
+            <div class="dropdown position-fixed bottom-0 mb-3">
                 <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
@@ -111,69 +111,66 @@
             </div>
         </div>
     </header>   
-    <main class="container-fluid bg-light align-items-center">
-        <div class="container-lg bg-body-secondary text-light-emphasis rounded-2 ">
-            <h1 class="mt-2 text-bg-dark text-light-emphasis rounded-2 text-center">Gráfico de Veículos por Dia da Semana</h1>
-    
-            <div class="chart-container">
-                <canvas id="chart"></canvas>
-            </div>
-        </div>
-        <div>
-            <div class="container ">
-                <h1 class="mt-5 text-bg-dark text-light-emphasis rounded-2">Painel de Controle do Estacionamento</h1>
-        
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <div class="card text-light-emphasis">
-                            <div class="card-header">
-                                <h2>Total de Vagas</h2>
+    <main class="container-fluid">
+        <div class="container-fluid">
+            <div class="container-lg mt-3 bg-body-secondary text-light rounded-2 text-center border-1 border">
+                <h1 class="mt-4 rounded-2 text-center">Gráfico de Veículos por Dia da Semana</h1>
+                <hr>
+                <div class="chart-container">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div> 
+                <div class="container-lg">
+                    <h1 class="mt-5 text-bg-dark rounded-2 text-center">Painel de Controle do Estacionamento</h1>
+
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6">
+                            <div class="card text-light-emphasis bg-body-secondary">
+                                <div class="card-header">
+                                    <h2>Total de Vagas</h2>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Capacidade: 100 vagas</h3>
+                                    <p class="card-text">Vagas ocupadas: 72</p>
+                                    <p class="card-text">Vagas disponíveis: 28</p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Capacidade: 100 vagas</h3>
-                                <p class="card-text">Vagas ocupadas: 72</p>
-                                <p class="card-text">Vagas disponíveis: 28</p>
+                        </div>
+            
+                        <div class="col-12 col-md-6">
+                            <div class="card text-light-emphasis bg-body-secondary">
+                                <div class="card-header">
+                                    <h2>Receita Diária</h2>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Valor total: R$ 1.250,00</h3>
+                                    <p class="card-text">Número de entradas: 45</p>
+                                    <p class="card-text">Número de saídas: 37</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="col-md-6">
-                        <div class="card text-light-emphasis">
-                            <div class="card-header">
-                                <h2>Receita Diária</h2>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Valor total: R$ 1.250,00</h3>
-                                <p class="card-text">Número de entradas: 45</p>
-                                <p class="card-text">Número de saídas: 37</p>
+            
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="card text-light-emphasis bg-body-secondary">
+                                <div class="card-header">
+                                    <h2>Últimas Entradas</h2>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Codigo: ABC-1234, Entrada: 2023-06-26 10:15:00</li>
+                                        <li class="list-group-item">Codigo: XYZ-9876, Entrada: 2023-06-26 09:30:00</li>
+                                        <li class="list-group-item">Codigo: DEF-5678, Entrada: 2023-06-25 17:45:00</li>
+                                        <li class="list-group-item">Codigo: GHI-2468, Entrada: 2023-06-25 14:20:00</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <div class="row mt-5">
-                    <div class="col-md-12">
-                        <div class="card text-light-emphasis">
-                            <div class="card-header">
-                                <h2>Últimas Entradas</h2>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Codigo: ABC-1234, Entrada: 2023-06-26 10:15:00</li>
-                                    <li class="list-group-item">Codigo: XYZ-9876, Entrada: 2023-06-26 09:30:00</li>
-                                    <li class="list-group-item">Codigo: DEF-5678, Entrada: 2023-06-25 17:45:00</li>
-                                    <li class="list-group-item">Codigo: GHI-2468, Entrada: 2023-06-25 14:20:00</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
-    <aside class="d-flex justify-content-end bg-dark h-100">
-
-    </aside>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>

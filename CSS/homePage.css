@@ -1,6 +1,6 @@
 .navBar {
-    border-right: 1px solid #fff;
-    box-shadow: 5px 0px 14px 1px #fff;
+    border-right: 1px solid rgb(196, 160, 0);
+    box-shadow: 5px 0px 14px 1px rgb(255, 196, 0);
 }
 
 .bd-placeholder-img {
@@ -79,4 +79,7 @@
 .chart-container {
     max-width: 800px!important;
     margin: 0 auto;
+}
+.active{
+    background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
 }

@@ -5,8 +5,8 @@ let data = {
     datasets: [{
         label: 'Quantidade de Veículos',
         data: [100, 45, 69, 40, 58, 80, 100],
-        backgroundColor: 'rgba(255, 255, 255, 0.5)', // Cor das barras (branco com transparência)
-        borderColor: 'rgba(255, 255, 255, 1)', // Cor das bordas das barras (branco)
+        backgroundColor: 'rgb(196, 160, 0, 0.5)', // Cor das barras (branco com transparência)
+        borderColor: 'rgb(255, 196, 0)', // Cor das bordas das barras (branco)
         borderWidth: 1, // Espessura das bordas das barras
         color: 'rgba(255, 255, 255, 1)' // Cor do texto (branco)
     }]
