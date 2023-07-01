@@ -90,11 +90,3 @@
 .active{
     background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
 }
-@media (max-width: 400px) {
-    header {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  }

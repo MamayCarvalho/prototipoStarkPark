@@ -1,6 +1,6 @@
 
     function saveChanges() {
-        // Recuperar os valores inseridos pelo usuário
+        // Recuperar os valores inseridos pelo usuï¿½rio
         let firstName = document.getElementById('inputFirstName').value;
         let lastName = document.getElementById('inputLastName').value;
         let cpf = document.getElementById('inputOrgName').value;
@@ -11,17 +11,12 @@
         let password = document.getElementById('inputPassword').value;
         let confirmPassword = document.getElementById('inputConfirmPassword').value;
 
-        // Realizar as validações necessárias, por exemplo, verificar se a senha e a confirmação de senha coincidem
-
-        // Enviar os dados para o servidor ou realizar outras ações necessárias
-        // ...
-
-        // Exibir uma mensagem de sucesso ou redirecionar para outra página
-        alert("Alterações salvas com sucesso!");
+    
+        alert("AlteraÃ§Ãµes salvas com sucesso!");
     }
 
     function formatarCPF(event) {
-        var cpf = event.target.value;
+        let cpf = event.target.value;
         cpf = cpf.replace(/\D/g, '');
         cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
         cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
@@ -29,7 +24,7 @@
         event.target.value = cpf;
       }
       function formatardata(event) {
-        var data = event.target.value;
+        let data = event.target.value;
         data =  data.replace(/\D/g, '');
         data =  data.replace(/(\d{2})(\d)/, "$1/$2");
         data =  data.replace(/(\d{2})(\d)/, "$1/$2");
@@ -38,3 +33,21 @@
         
         event.target.value =  data;
       }
+      function formatarTelefone(event) {
+        let telefone = event.target.value;
+        telefone = telefone.replace(/\D/g, ''); // Remove todos os caracteres nÃ£o numÃ©ricos
+    
+        if (telefone.length <= 2) {
+          telefone = telefone.replace(/^(\d{0,2})/, '($1'); // Insere '(' apÃ³s os dois primeiros dÃ­gitos
+        } else if (telefone.length <= 6) {
+          telefone = telefone.replace(/^(\d{0,2})(\d{0,4})/, '($1) $2'); // Insere '()' e espaÃ§o apÃ³s o DDD
+        } else if (telefone.length <= 11) {
+          telefone = telefone.replace(/^(\d{0,2})(\d{0,1})(\d{0,4})(\d{0,4})/, '($1) $2-$3-$4'); // Insere '-' apÃ³s o primeiro grupo de 4 dÃ­gitos
+        } else {
+          telefone = telefone.replace(/^(\d{0,2})(\d{0,1})(\d{0,4})(\d{0,4})(\d{0,4}).*/, '($1) $2-$3-$4'); // Limita a 14 dÃ­gitos
+        }
+    
+        event.target.value = telefone;
+      }
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+
