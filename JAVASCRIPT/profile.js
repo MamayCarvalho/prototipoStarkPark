@@ -51,3 +51,12 @@
       }
   ////////////////////////////////////////////////////////////////////////////////////////////////
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttonEditar = document.getElementById("btnEdit");
+    const inputs = document.querySelectorAll("input");
+    buttonEditar.addEventListener("click", function () {
+      inputs.forEach(function (input) {
+        input.disabled = !input.disabled;
+      });
+    });
+  });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,13 @@
     <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/cadastroUsuarios.css">
     <title>Document</title>
 </head>
 <body>
 
     <body class="d-flex m-0 p-0" data-bs-theme="dark">
-        <header  class="">
+        <header class="">
             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                 <symbol id="home" viewBox="0 0 16 16">
                     <path
@@ -50,17 +50,18 @@
                     </path>
                 </symbol>
             </svg>
-            <div class="navBar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 225px; height: 100%; min-height: 100vh;">
-                <a href="/"
+            <div class="navBar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+                style="width: 225px; height: 100%; min-height: 100vh;">
+                <a href="homePage.html"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light  text-decoration-none">
-                    <img lass="bi pe-none me-2" src="/COMPONENTES/logo/logo-stark-branco-v1.2.png" alt=""
+                    <img lass="bi pe-none me-2" src="COMPONENTES/logo/logo-stark-branco-v1.2.png" alt=""
                         style="height: auto; width: 60px;">
                     <span class="fs-4">Stark Park</span>
                 </a>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="homePage.html" class="nav-link  link-light  active fw-bold" aria-current="page">
+                        <a href="homePage.html" class="nav-link link-light fw-bold" aria-current="page">
                             <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#home"></use>
                             </svg>
@@ -68,7 +69,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link link-light  fw-bold">
+                        <a href="#" class="nav-link link-light fw-bold">
                             <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#speedometer2"></use>
                             </svg>
@@ -76,7 +77,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="monitoramento.html" class="nav-link link-light  fw-bold">
+                        <a href="monitoramento.html" class="nav-link link-light fw-bold">
                             <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#table"></use>
                             </svg>
@@ -84,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="totem.html" class="nav-link link-light  fw-bold">
+                        <a href="totem.html" class="nav-link link-light fw-bold">
                             <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#grid"></use>
                             </svg>
@@ -92,7 +93,7 @@
                         </a>
                     </li>
                 </ul>
-
+    
                 <div class="dropdown position-fixed bottom-0 mb-3">
                     <a href="#" class="d-flex align-items-center link-light  text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,8 +101,7 @@
                         <strong>ADMIN</strong>
                     </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="#">Usuarios</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item active" href="cadastroUsuarios.html">Usuarios</a></li>
                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -110,56 +110,90 @@
                     </ul>
                 </div>
             </div>
-        </header>  
+        </header>
 
-
-
-
-
-    <div class="container-lg mt-3 bg-body-secondary text-light rounded-2 border-1 border">
-        <h1 class="mt-4 rounded-2 text-center">Cadastro de Usuários</h1>
-        <hr>
-        <form class="row g-3">
-
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4"placeholder="exemplo@email.com">
+    <div class="container-lg mt-3">
+        <div class="container mt-5 ">
+            <div class="border rounded m-0 mb-3">
+                <h1 class="p-2">Formulário de Cadastro</h1>
+                <form class="bg-body-secondary p-3 " id="cadastroForm">
+                  <div class="row gx-4 mb-4">
+                    <div class="col-md-6">
+                      <label class="small mb-1" for="inputFirstName">Nome</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputFirstName" type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="small mb-1" for="inputLastName">Sobrenome</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputLastName" type="text" placeholder="Sobrenome" required>
+                    </div>
+                  </div>
+                  <div class="row gx-4 mb-4">
+                    <div class="col-12 col-md-6">
+                      <label class="small mb-1" for="cpf">CPF</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="cpf" type="text" placeholder="000.000.000-00" maxlength="14" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="small mb-1" for="inputBirthday">Data de Nascimento</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputBirthday" type="text" placeholder="00/00/0000" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="small mb-1" for="Registro">Registro</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="Registro" type="text" placeholder="xxxxx-xxxxx-xxxxx-xxxxx-xxxxx" minlength="25" maxlength="25" required>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="small mb-1" for="inputEmailAddress">E-mail</label>
+                    <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputEmailAddress" type="email" placeholder="exemplo@address.com" required>
+                  </div>
+                  <div class="row gx-3 mb-3">
+                    <div class="col-12 col-md-6">
+                      <label class="small mb-1" for="inputPhone">Número de telefone</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputPhone" type="tel" placeholder="(00) 0-0000-0000" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="small mb-1" for="inputLocation">Endereço</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputLocation" type="text" placeholder="Endereço" required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                      <label class="small mb-1" for="inputPassword">Senha</label>
+                      <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputPassword" type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <label class="small mb-1" for="inputConfirPassword">Confirma Senha</label>
+                        <input class="form-control d-inline-flex focus-ring focus-ring-warning py-1 px-2 text-decoration-none border rounded-2" id="inputConfirPassword" type="password" placeholder="Confirma Senha" required>
+                      </div>
+                  </div>
+                  <button type="submit" class="btn btn-warning fw-bolder mb-3">Salvar</button>
+                </form>
+            </div>   
+                <h2>Lista de Usuários Cadastrados</h2>
+                <div class="table-responsive bg-body-tertiary p-1 rounded border">
+                    <table class="table table-dark table-hover table-striped border-warning m-0">
+                      <thead>
+                        <tr>
+                          <th>Nome</th>
+                          <th>Sobrenome</th>
+                          <th>CPF</th>
+                          <th>Registro</th>
+                          <th>E-mail</th>
+                          <th>Número de Telefone</th>
+                        </tr>
+                      </thead>
+                      <tbody id="listaUsuarios">
+                        <tr>
+                            <td>João</td>
+                            <td>Silva</td>
+                            <td>123.456.789-00</td>
+                            <td>123456</td>
+                            <td>joao.silva@example.com</td>
+                            <td>(11) 98765-4321</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            
           </div>
-         
-          <div class="col-6">
-            <label for="inputAddress" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="seu nome completo">
-          </div>
-
-
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="************">
-          </div>
-
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Confirme a Senha</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="************">
-          </div>
-         
-          <div class="col-md-4">
-            <label for="cpf">CPF:</label>
-            <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF" maxlength="14" onkeypress="formatarCPF(event)">
-          </div>
-          <div class="col-md-3">
-            <label for="dataNascimento">Data de Nascimento:</label>
-            <input type="text" class="form-control" id="dataNascimento" placeholder="Data de Nascimento" maxlength="10" onkeypress="formatarDataNascimento(event)">
-          </div>
-
-          <div class="col-sm-3">Gênero
-            <label class="visually-hidden" for="specificSizeSelect"></label>
-            <select class="form-select" id="specificSizeSelect">
-              <option selected>Gênero</option>
-              <option>Masculino</option>
-              <option>Feminino</option>
-              <option>Gênero não binário</option>
-            </select>
-          </div>
+    </div>
 
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -167,40 +201,8 @@
        crossorigin="anonymous"></script>
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <script src="JAVASCRIPT/img-profile.js"></script>
+       <script src="JAVASCRIPT/cadastroUsuarios.js"></script>
 
 
-
-      <script>
-         function formatarCPF(event) {
-      var cpf = event.target.value;
-      cpf = cpf.replace(/\D/g, '');
-      cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-      cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
-      cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-      event.target.value = cpf;
-    };
-
-    function formatarDataNascimento(event) {
-  // Obtém o elemento de entrada (input) e o valor atual digitado nele
-  const input = event.target;
-  let value = input.value;
-
-  // Verifica se a tecla pressionada é um número
-  const charCode = event.which ? event.which : event.keyCode;
-  if (charCode < 48 || charCode > 57) {
-    // Se não for um número, cancela o evento de tecla (não insere o caractere)
-    event.preventDefault();
-    return;
-  }
-
-  // Formatação: 'DD/MM/AAAA'
-  if (value.length === 2 || value.length === 5) {
-    value += '/';
-  }
-
-  // Atualiza o valor no campo de data de nascimento
-  input.value = value;
-}
-        </script>
 </body>
 </html> 
