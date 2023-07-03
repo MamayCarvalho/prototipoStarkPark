@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="CSS/login.css">
     <title>login Stark</title>
 </head>
-<body>
+<body >
     <!------ Include the above in your HEAD tag ---------->
     
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
+    <div class="wrapper fadeInDown ">
+      <div class="bg-body-secondary" id="formContent">
         <!-- Tabs Titles -->
     
         <!-- Icon -->
         <div class="fadeIn first">
-          <img src="COMPONENTES/logo/logo-stark-preta-v1.2.png" id="icon" alt="User Icon" />
+          <img src="COMPONENTES/logo/logo-stark-branco-v1.2.png" id="icon" alt="User Icon" />
         </div>
     
         <!-- Login Form -->
         <form onsubmit="validateForm(event)">
-          <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-          <input type="password" id="senha" class="fadeIn third" name="login" placeholder="senha">
-          <input type="submit" class="fadeIn fourth" value="login">
+          <input type="text" id="login" class="fadeIn second bg-secondary border rounded-5" name="login" placeholder="login">
+          <input type="password" id="senha" class="fadeIn third bg-secondary border rounded-5" name="login" placeholder="senha">
+          <input type="submit" class="fadeIn fourth btn btn-warning pt-2" value="login">
         </form>
     
         <!-- Remind Passowrd -->
-        <div id="formFooter">
-          <a class="underlineHover" href="#">Esqueceu a senha?</a>
+        <div class="bg-dark" id="formFooter">
+          <a class="underlineHover text-light" href="#">Esqueceu a senha?</a>
         </div>
     
       </div>
