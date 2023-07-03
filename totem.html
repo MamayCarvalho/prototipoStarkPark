@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <main class="flex-grow-1 flex-shrink-1 w-100">
+    <main class="flex-grow-1 flex-shrink-1 w-100 ">
         <section class="container-fluid col m-0 p-0 ">
-            <section class="container-fluid row m-0 p-0">
+            <section class="container-fluid row m-0 p-0 ">
                 <div class="painelVagas container-fluid d-flex col mt-2">
                     <div class="painel" ><p id="vagasTotais">Vagas Totais: 100</p></div>
                     <div class="painel" ><p id="vagasOcupadas"></p></div>
                     <div class="painel" ><p id="vagasLivres"></p></div>
                 </div>
                 <div class="principal">
-                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                    <button type="button" class="botaoModal btn" data-bs-toggle="modal"
                         data-bs-target="#modalVagas" onclick="selectCar()"><img src="COMPONENTES/1299198.svg"
                             alt="Carro">
                         <p>Carro</p>
@@ -30,13 +30,13 @@
                     <div class="modal fade modal-full" id="modalVagas" data-bs-backdrop="static"
                         data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalVagasLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
+                            <div class="modal-content bg-body-secondary">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="modalVagasLabel">Carros</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    <h1 class="modal-title fs-5 bg-body-secondary" id="modalVagasLabel">Carros</h1>
+                                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"
                                         onclick="resetTipoVeiculo()"></button>
                                 </div>
-                                <div class="modal-body d-flex flex-wrap gap-3">
+                                <div class="modal-body d-flex flex-wrap gap-3 bg-body-secondary">
                                     <div id="A01" class="vaga" onclick="reserveVaga(1)">A01</div>
                                     <div id="A02" class="vaga" onclick="reserveVaga(2)">A02</div>
                                     <div id="A03" class="vaga" onclick="reserveVaga(3)">A03</div>
@@ -120,13 +120,13 @@
                                 </div>
                                 <div class="modal-footer">
                                     <p class="text-success fs-3">Verde Livres   </p> - <p class="text-danger fs-3">  Vermelho Ocupado</p>
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                    <button type="button" class="btn" data-bs-dismiss="modal"
                                         onclick="resetTipoVeiculo()">Voltar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                    <button type="button" class="botaoModal btn" data-bs-toggle="modal"
                         data-bs-target="#modalVagasMoto" onclick="selectMoto()"><img src="COMPONENTES/39131.svg" alt="Moto">
                         <p>Moto</p>
                     </button>
@@ -140,7 +140,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                                         onclick="resetTipoVeiculo()"></button>
                                 </div>
-                                <div class="modal-body d-flex flex-wrap gap-3">
+                                <div class="modal-body d-flex flex-wrap gap-3 ">
                                     <div id="H080" class="vaga" onclick="reserveVaga(80)">H080</div>
                                     <div id="I081" class="vaga" onclick="reserveVaga(81)">I081</div>
                                     <div id="I082" class="vaga" onclick="reserveVaga(82)">I082</div>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="botaoModal btn btn-primary" data-bs-toggle="modal"
+                    <button type="button" class="botaoModal btn" data-bs-toggle="modal"
                         data-bs-target="#modalUber">
                         <img src="COMPONENTES/Uber.svg" alt="Uber">
                         <p>Veículos de Aplicativos</p>
@@ -203,10 +203,11 @@
             </section>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script  src="JAVASCRIPT/totem.js"></script>
 </body>
 

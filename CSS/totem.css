@@ -1,3 +1,7 @@
+body{
+    background-color: #343a40;
+
+}
 .escolhaVagas{
     width: 100vw !important;
     height: 100vh !important;
@@ -22,7 +26,7 @@
     cursor: pointer;
     font-size: 1.7em;
     font-weight: 600;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     background-color: rgb(255, 153, 0);
 }
 .painel{
@@ -51,8 +55,10 @@
     justify-content: space-between;
     padding: 0px 140px 0px 140px;
     align-items: center;
-    border: 3px solid #000;
     margin: 5px;
+    background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
+    color: #000;
+    font-weight: bold !important;
 }
 .botaoModal img{
     width: auto;
