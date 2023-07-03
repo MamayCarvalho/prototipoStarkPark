@@ -27,7 +27,7 @@ body{
     font-size: 1.7em;
     font-weight: 600;
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(94, 94, 94);
 }
 .painel{
     display: flex;
@@ -57,7 +57,7 @@ body{
     align-items: center;
     margin: 5px;
     background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
-    color: #000;
+    color: #000000;
     font-weight: bold !important;
 }
 .botaoModal img{
@@ -69,3 +69,4 @@ body{
     font-weight: 700;
     letter-spacing: 2px;
 }
+

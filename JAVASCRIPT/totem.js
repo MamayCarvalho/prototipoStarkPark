@@ -33,7 +33,7 @@ function reserveVaga(numero) {
       alert("Essa vaga já está ocupada!");
     }
   } else {
-    let confirmacao = confirm("Deseja reservar a vaga?");
+    let confirmacao = confirm(`Deseja reservar a vaga?`);
     if (confirmacao) {
       let codigo = gerarCodigo();
       vagasStatus[numero] = {
