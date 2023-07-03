@@ -57,8 +57,12 @@ body{
     align-items: center;
     margin: 5px;
     background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
-    color: #000000;
+    color: #000000!important;
     font-weight: bold !important;
+    transition: all 0.6s;
+}
+.botaoModal:hover{
+   color: #000000!important;
 }
 .botaoModal img{
     width: auto;
