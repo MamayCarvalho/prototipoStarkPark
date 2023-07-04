@@ -118,7 +118,7 @@ let data6 = [getRandomInt(0, 10), getRandomInt(2, 10)];
 let data7 = [getRandomInt(0, 10), getRandomInt(2, 10)];
 let data8 = [getRandomInt(0, 10), getRandomInt(2, 10)];
 let data9 = [getRandomInt(0, 10), getRandomInt(2, 10)];
-let data10 = [getRandomInt(0, 10), getRandomInt(2, 10)];
+let data10 = [getRandomInt(0, 10), getRandomInt(2,10)];
 
 // Normalizando para garantir que a soma dos valores em cada array seja 10
 let normalizeArray = (arr) => {
@@ -172,17 +172,6 @@ function criarGraficoPizza(containerId, canvasId, labels, data) {
 
               return label + value;
             }
-          }
-        },
-        datalabels: {
-          formatter: (value, ctx) => {
-            let sum = ctx.dataset._meta[0].total;
-            let percentage = (value * 100 / sum).toFixed(2) + "%";
-            return percentage;
-          },
-          color: "#fff",
-          font: {
-            weight: "bold"
           }
         }
       }
