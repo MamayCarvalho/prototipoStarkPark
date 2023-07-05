@@ -47,9 +47,23 @@ body{
    
 }
 .painel p{
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     color: #fff;
     font-weight: 700;
+}
+@media only screen and (min-width: 1291px){
+    .painel p{
+        font-size: 3rem !important;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width: 907px){
+    .painel p{
+        font-size: 1.5rem !important;
+        color: #fff;
+        font-weight: 700;
+    }
 }
 .botaoModal{
     display: flex;
