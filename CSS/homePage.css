@@ -22,6 +22,7 @@
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+   
 }
 
 .b-example-divider {
@@ -123,4 +124,14 @@
   ::-webkit-scrollbar-track {
     background-color: black;
     border: 2px solid black;
+  }
+
+  @media only screen and (max-width:800px){
+    span{
+        display: none !important;
+    }
+    .navBar{
+        width: auto !important;
+        display: flex;
+    }
   }

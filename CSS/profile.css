@@ -145,3 +145,12 @@
       flex-basis: calc(33.33% - 20px);
     }
   }
+  @media only screen and (max-width:800px){
+    span{
+        display: none !important;
+    }
+    .navBar{
+        width: auto !important;
+        display: flex;
+    }
+  }

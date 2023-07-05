@@ -130,3 +130,12 @@
     background-color: black;
     border: 2px solid black;
   }
+  @media only screen and (max-width:800px){
+    a span{
+        display: none !important;
+    }
+    .navBar{
+        width: auto !important;
+        display: flex;
+    }
+  }
