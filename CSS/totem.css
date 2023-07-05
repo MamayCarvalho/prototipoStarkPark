@@ -29,12 +29,16 @@ body{
     color: rgb(255, 255, 255);
     background-color: rgb(94, 94, 94);
 }
+.painelVagas {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
 .painel{
     display: flex;
-    height: 9em;
-    width: 100%;
-    margin: 0px 2px 0px 2px;
+    flex: 1;
     padding: 15px;
+    height: 8em;
     align-items: center;
     justify-content: center;
     background-color: #000;
@@ -43,17 +47,17 @@ body{
    
 }
 .painel p{
-    font-size: 40px;
+    font-size: 3rem !important;
     color: #fff;
     font-weight: 700;
 }
 .botaoModal{
     display: flex;
     flex-direction: row;
-    height: 255px;
+    height: 27vh;
     width: 100%;
     justify-content: space-between;
-    padding: 0px 140px 0px 140px;
+    padding: 2em 4em;
     align-items: center;
     margin: 5px;
     background: linear-gradient(129deg, #FFAE00 0%, #FFCD00 30%, #FFE100 62%, #FFB900 83%) !important;
@@ -65,13 +69,25 @@ body{
    color: #000000!important;
 }
 .botaoModal img{
-    width: auto;
-    height: 15rem;
+    width: 15vw;
+    height: 15vh;
+}
+.modal-title{
+    font-size: 3em !important;
 }
 .botaoModal p{
-    font-size: 40pt;
+    font-size: 4em !important;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+@media only screen and (max-width:617px){
+    .botaoModal p{
+        font-size: 3em !important;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+     
 }
 
 /* Estilos para a barra de rolagem */
