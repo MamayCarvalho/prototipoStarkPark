@@ -149,12 +149,14 @@ function criarGraficoPizza(containerId, canvasId, labels, data) {
       datasets: [{
         data: data,
         backgroundColor: ["rgb(196, 160, 0, 0.5)", "rgb(195, 195, 195, 0.5)"]
+        
       }]
     },
     options: {
       plugins: {
         legend: {
-          align: "start"
+          align: "start",
+          color: "rgb(196, 160, 0, 0.5)"
         },
         tooltip: {
           callbacks: {
@@ -179,13 +181,13 @@ function criarGraficoPizza(containerId, canvasId, labels, data) {
   });
 }
 
-criarGraficoPizza("container", "chart1", labels, data1);
-criarGraficoPizza("container", "chart2", labels, data2);
-criarGraficoPizza("container", "chart3", labels, data3);
-criarGraficoPizza("container", "chart4", labels, data4);
-criarGraficoPizza("container", "chart5", labels, data5);
-criarGraficoPizza("container", "chart6", labels, data6);
-criarGraficoPizza("container", "chart7", labels, data7);
-criarGraficoPizza("container", "chart8", labels, data8);
-criarGraficoPizza("container", "chart9", labels, data9);
-criarGraficoPizza("container", "chart10", labels, data10);
+criarGraficoPizza("ctnPizza", "chart1", labels, data1);
+criarGraficoPizza("ctnPizza", "chart2", labels, data2);
+criarGraficoPizza("ctnPizza", "chart3", labels, data3);
+criarGraficoPizza("ctnPizza", "chart4", labels, data4);
+criarGraficoPizza("ctnPizza", "chart5", labels, data5);
+criarGraficoPizza("ctnPizza", "chart6", labels, data6);
+criarGraficoPizza("ctnPizza", "chart7", labels, data7);
+criarGraficoPizza("ctnPizza", "chart8", labels, data8);
+criarGraficoPizza("ctnPizza", "chart9", labels, data9);
+criarGraficoPizza("ctnPizza", "chart10", labels, data10);

@@ -1,0 +1,106 @@
+<main class="main container-fluid mt-5">
+    <div class="container mt-4 m-0">
+        <div class="mainChd row m-0">
+            <div class="col-md-8">
+                <div class="card bg-body-secondary mb-3">
+                    <div class="card-header">
+                        <h2 class="h5">Mapa do Estacionamento</h2>
+                    </div>
+                    <div class="card-body bg-body-secondary">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="mb-3 bg-dark-subtle border p-2 rounded">Nível 1</h4>
+                                <div class="row border p-2 m-1 rounded-2 bg-dark">
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="parking-spot occupied">
+                                            <span class="spot-label">Setor - A</span>
+                                            <br>
+                                            <span class="badge bg-success-subtle">A-01</span>
+                                            <span class="badge bg-success">A-02</span>
+                                            <span class="badge bg-success-subtle">A-03</span>
+                                            <span class="badge bg-success-subtle">A-04</span>
+                                            <span class="badge bg-success-subtle">A-05</span>
+                                            <span class="badge bg-success-subtle">A-06</span>
+                                            <span class="badge bg-success-subtle">A-07</span>
+                                            <span class="badge bg-success-subtle">A-08</span>
+                                            <span class="badge bg-success">A-09</span>
+                                            <span class="badge bg-success-subtle">A-10</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="parking-spot vacant">
+                                            <span class="spot-label">Setor - B</span>
+                                            <br>
+                                            <span class="badge bg-success-subtle">B-01</span>
+                                            <span class="badge bg-success-subtle">B-02</span>
+                                            <span class="badge bg-success">B-03</span>
+                                            <span class="badge bg-success-subtle">B-04</span>
+                                            <span class="badge bg-success-subtle">B-05</span>
+                                            <span class="badge bg-success-subtle">B-06</span>
+                                            <span class="badge bg-success-subtle">B-07</span>
+                                            <span class="badge bg-success-subtle">B-08</span>
+                                            <span class="badge bg-success">B-09</span>
+                                            <span class="badge bg-success-subtle">B-10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-body-secondary" style="min-width: 345px;">
+                    <div class="card-header">
+                        <h2 class="h5">Informações</h2>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="mb-3 bg-dark-subtle border p-2 rounded">Detalhes do Estacionamento</h4>
+                        <div class="bg-dark border p-2 rounded">
+                            <p><strong>Localização:</strong> Av. Principal, 123</p>
+                            <p><strong>Total de Vagas:</strong> 100</p>
+                            <p><strong>Vagas Ocupadas:</strong> 80</p>
+                            <p><strong>Vagas Disponíveis:</strong> 20</p>
+                        </div>
+
+                        <h4 class="mt-4 mb-3 bg-dark-subtle border p-2 rounded">Resumo por Tipo de Veículo</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-start gap-3 align-items-center">
+                                Carros: 80
+                                <span class="detalhes badge bg-success">Livres: 17</span>
+                                <span class="detalhes badge bg-success-subtle">Ocupadas: 63</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-start gap-3 align-items-center">
+                                Motos: 20
+                                <span class="detalhes badge bg-primary">Livres: 3</span>
+                                <span class="detalhes badge bg-primary-subtle">Ocupadas: 17</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 mb-3">
+            <div class="col-md-12">
+                <div class="card text-light-emphasis bg-body-secondary">
+                    <div class="card-header">
+                        <h2 class="bg-dark-subtle border p-2 rounded">Entradas e Saídas</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item lh-1 fs-5 text">Código: V24@516#, Veículo: Carro, Entrada:
+                                2023-06-26 10:15:32, Saída: 2023-06-26 13:15:34</li>
+                            <li class="list-group-item lh-1 fs-5 text list-group-item-secondary">Código: @Y4T9GS6,
+                                Veículo: Moto, Entrada: 2023-06-26 10:16:15, Saída: 2023-06-26 14:15:45</li>
+                            <li class="list-group-item lh-1 fs-5 text">Código: VNB$H#48, Veículo: Aplicativo, Entrada:
+                                2023-06-26 18:18:19, Saída: 2023-06-26 18:23:18</li>
+                            <li class="list-group-item lh-1 fs-5 text list-group-item-secondary">Código: G@56#G6$,
+                                Veículo: Moto, Entrada: 2023-06-26 10:20:17, Saída: 2023-06-26 11:25:21</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

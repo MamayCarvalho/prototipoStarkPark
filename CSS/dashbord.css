@@ -5,7 +5,7 @@
     letter-spacing: 1.3px;
 }
 
-.navBar {
+.sidebar {
     border-right: 1px solid rgb(196, 160, 0);
     box-shadow: 5px 0px 14px 1px rgb(255, 196, 0);
 }
@@ -110,7 +110,9 @@
 }
 
 .graficoPizza{
-    min-width: 200px !important;
+    min-width: 200px;
+    min-height: 270px;
+    width: 15vw;
 }
 
 /* Estilos para a barra de rolagem */
@@ -136,12 +138,23 @@
     background-color: black;
     border: 2px solid black;
   }
-  @media only screen and (max-width:800px){
-    span{
+  
+  @media only screen and (max-width: 920px) {
+    .sidebar {
         display: none !important;
     }
-    .navBar{
-        width: auto !important;
-        display: flex;
+    .navbar {
+        display: block !important;
+         border-bottom: 1px solid rgb(196, 160, 0);
+        box-shadow: 5px 0px 14px 1px rgb(255, 196, 0);
     }
-  }
+    .main {
+        padding-top: 25px !important;
+    }
+}
+@media only screen and (max-width:600px){
+    .graficoPizza{
+        flex: auto !important;
+    }
+
+}

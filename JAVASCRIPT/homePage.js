@@ -9,3 +9,4 @@ document.getElementById('motos').innerText = quantidadeMotos;
 
 document.getElementById('carrosDois').innerText = quantidadeCarrosDois;
 document.getElementById('motosDois').innerText = quantidadeMotosDois;
+
