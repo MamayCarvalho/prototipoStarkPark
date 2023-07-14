@@ -142,8 +142,14 @@
     }
      
 }
-.mainchd{
-    flex: auto;
+@media only screen and (max-width: 1220px) {
+    .mainchd2{
+        flex: 0 0 800px !important;
+    }
+}
+
+.mainchd2{
+    width: 68%;
 }
 .cardMap{
     flex: auto !important;
